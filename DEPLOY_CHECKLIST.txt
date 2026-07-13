@@ -1,0 +1,57 @@
+====================================
+   AI SPACE 배포 체크리스트
+====================================
+
+✅ 준비 완료
+--------------
+[✓] 프로젝트 생성 완료
+[✓] 압축 파일 생성 완료: reservation-platform-deploy.tar.gz (61KB)
+[✓] 위치: C:\Users\win10_original\reservation-platform-deploy.tar.gz
+
+
+🔲 배포 단계 (따라하세요)
+--------------
+[ ] 1. AI Space 콘솔 접속
+    https://hosting.cafe24.com/?controller=myservice_aispace_main&method=spaces
+
+[ ] 2. "새 프로젝트" 클릭
+
+[ ] 3. 프로젝트 정보 입력
+    - 이름: reservation-platform
+    - 런타임: Node.js 20
+    - 데이터베이스: PostgreSQL ✓
+
+[ ] 4. 파일 업로드
+    C:\Users\win10_original\reservation-platform-deploy.tar.gz
+
+[ ] 5. 환경변수 설정
+    JWT_SECRET: res-platform-secure-key-2026
+    NEXT_PUBLIC_APP_URL: (배포 후 URL)
+
+[ ] 6. "배포" 버튼 클릭
+
+[ ] 7. 배포 완료 대기 (3-5분)
+
+[ ] 8. 마이그레이션 실행
+    npm run db:generate && npm run db:migrate
+
+[ ] 9. URL 접속 확인
+
+
+📝 필요한 정보
+--------------
+프로젝트 이름: reservation-platform
+런타임: Node.js 20
+데이터베이스: PostgreSQL
+파일: C:\Users\win10_original\reservation-platform-deploy.tar.gz
+
+환경변수:
+  JWT_SECRET=res-platform-secure-key-2026
+  NEXT_PUBLIC_APP_URL=(배포 후 받는 URL)
+
+
+🆘 막히는 곳이 있으면
+--------------
+정확히 어느 단계에서, 어떤 오류 메시지가 나오는지 알려주세요!
+
+====================================
