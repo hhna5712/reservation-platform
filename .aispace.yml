@@ -4,7 +4,7 @@ name: reservation-platform
 
 # 빌드 설정
 build:
-  command: npm install && npm run build
+  command: npm ci && npm run build
 
 # 실행 설정
 start:
