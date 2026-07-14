@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "rm -rf node_modules && npm install && next build",
     "start": "next start",
     "lint": "next lint",
     "db:generate": "drizzle-kit generate",
@@ -35,7 +35,7 @@
     "postcss": "^8.4.0",
     "autoprefixer": "^10.4.0",
     "drizzle-kit": "^0.26.0",
-    "eslint": "^8.57.0",
+    "eslint": "8.57.0",
     "eslint-config-next": "^14.2.0"
   }
 }
