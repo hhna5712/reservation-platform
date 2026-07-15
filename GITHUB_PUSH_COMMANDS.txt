@@ -1,0 +1,26 @@
+====================================
+   GitHub Push 명령어
+====================================
+
+⚠️ 먼저 GitHub 저장소를 생성하세요!
+https://github.com/new
+
+저장소 생성 후, 아래 명령어를 실행하세요:
+(YOUR-USERNAME을 실제 GitHub 사용자명으로 변경)
+
+====================================
+
+cd C:\Users\win10_original\reservation-platform
+
+git remote add origin https://github.com/YOUR-USERNAME/reservation-platform.git
+
+git branch -M main
+
+git push -u origin main
+
+====================================
+
+완료되면 다음과 같은 메시지가 나옵니다:
+"Branch 'main' set up to track remote branch 'main' from 'origin'"
+
+====================================
